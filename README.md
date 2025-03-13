@@ -1,8 +1,7 @@
 ## Sales Forecasting Project Using Python
 
-Welcome to this comprehensive sales forecasting project designed as an easily reusable template. This project showcases the application of various predictive modeling techniques for accurate weekly sales forecasting, leveraging Python's powerful data science libraries.
+This is a sales forecasting project designed as an easily reusable template. This project showcases the application of various predictive modeling techniques for accurate weekly sales forecasting, leveraging Python's powerful data science libraries.
 
----
 
 ### Overview
 
@@ -11,8 +10,6 @@ This template demonstrates how to:
 - Predict weekly sales using time series analysis.
 - Incorporate external factors such as Digital Ads, Offline Ads, TV commercials (TVCM), and Print Media into forecasting models.
 - Compare the performance of multiple forecasting models including Linear Regression, Prophet, LightGBM, and SARIMAX.
-
----
 
 ### Dataset
 
@@ -30,8 +27,6 @@ The dataset used in this project includes:
   - Print Media spend
 
 All data is cleaned and preprocessed to ensure consistency and accuracy for modeling purposes.
-
----
 
 ### Modeling Techniques
 
@@ -52,8 +47,6 @@ The following forecasting methods have been compared:
 - **SARIMAX (Seasonal ARIMA with external regressors)**:
 
   - Combines traditional ARIMA modeling with external regressors, explicitly capturing both seasonal patterns and external influences.
-
----
 
 ### Performance Comparison
 
@@ -81,8 +74,6 @@ Each model's performance is compared against benchmarks such as simple historica
 - **Insightful Analysis:**
   - Provides recommendations on selecting the optimal model based on accuracy, complexity, and interpretability, allowing users to confidently identify the best-performing approach for their specific forecasting tasks.
 
----
-
 ### Usage as a Template
 
 This project is structured clearly, with step-by-step code and detailed explanations:
@@ -93,7 +84,6 @@ This project is structured clearly, with step-by-step code and detailed explanat
 
 You can directly reuse and adapt the provided code to your own datasets, quickly generating robust sales forecasts.
 
----
 
 ### Project Deliverables
 
@@ -101,7 +91,6 @@ You can directly reuse and adapt the provided code to your own datasets, quickly
 - Comprehensive Jupyter Notebook showcasing all steps clearly.
 - Visualizations comparing model performance and forecasts.
 
----
 
 Leverage this template to effectively forecast your sales, optimize advertising spend, and drive informed strategic decisions.
 

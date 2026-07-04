@@ -1,0 +1,58 @@
+data:
+  path: data/sales_data.csv
+  date_column: Date
+  target_column: Sales
+  record_type_column: Record_Type
+  actual_value: Actual
+  forecast_value: Forecast
+  external_features:
+    - TVCM_GPR
+    - Print_Media
+    - Offline_Ads
+    - Digital_Ads
+
+split:
+  validation_weeks: 12
+  test_weeks: 12
+
+models:
+  enabled:
+    - baseline
+    - linear_regression
+    - lightgbm
+    - prophet
+    - sarimax
+  parameters:
+    baseline:
+      strategy: seasonal_naive
+    lightgbm:
+      n_estimators: 100
+      learning_rate: 0.05
+      random_state: 42
+    prophet:
+      yearly_seasonality: true
+      weekly_seasonality: false
+      daily_seasonality: false
+    sarimax:
+      order: [1, 0, 0]
+      seasonal_order: [0, 1, 1, 52]
+      trend: c
+
+evaluation:
+  metrics:
+    - rmse
+    - mae
+    - mape
+    - smape
+    - wape
+    - bias
+
+forecast:
+  default_horizon: 12
+
+output:
+  models_dir: outputs/models
+  evaluation_dir: outputs/evaluation
+  forecast_dir: outputs/forecast
+  figures_dir: outputs/figures
+  report_path: outputs/reports/model_comparison_report.md

@@ -1,0 +1,27 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+src/*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual Environment
+.venv/
+
+# Test and lint caches
+.pytest_cache/
+.ruff_cache/
+
+# Agent/Steering files
+.agent/
+.steering/
+
+# Pipeline generated outputs
+outputs/evaluation/
+outputs/forecast/
+outputs/models/
+outputs/figures/
